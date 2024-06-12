@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcccc;
+    text-align: center;
+   
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+#iniciarBtn {
+    background-color: #ff6b6b; /* Cor de fundo rosa */
+    color: white; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 30px; /* Bordas mais arredondadas */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+}
+
+#iniciarBtn:hover {
+    background-color: #ff8f8f; /* Cor de fundo rosa mais clara quando o mouse está sobre o botão */
+}
+#tentarNovamenteBtn {
+    background-color: #ff6b6b; /* Cor de fundo rosa */
+    color: white; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+}
+
+#tentarNovamenteBtn:hover {
+    background-color: #ff8f8f; /* Cor de fundo rosa mais clara quando o mouse está sobre o botão */
+}
+
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.porta {
+    width: 80px;
+    height: 120px;
+    background-color: #a3a3a3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#porta1:hover, #porta2:hover, #porta3:hover {
+    background-color: #5cb85c; /* Cor de destaque ao passar o mouse */
+  }
+.imagem-container {
+    display: center;
+    gap: 20px; /* Espaço entre as imagens */
+}
+#mensagem p {
+  font-size: 18px; /* Tamanho da fonte para o parágrafo */
+}
+
+
+.imagem-responsiva {
+width: 150px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Altura automática para manter a proporção */
+    border: 5px solid #ff6b6b; /* Borda romântica */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.piscar {
+    animation: blink 1s infinite; /* 1s é a duração da animação e 'infinite' faz a animação repetir indefinidamente */
+}
+#mostrarBtn {
+    background-color: #ff6b6b; /* Cor de fundo rosa */
+    color: white; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 40px; /* Bordas mais arredondadas para um estilo mais divertido */
+    padding: 20px 40px; /* Espaçamento interno do botão */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+}
+
+#mostrarBtn:hover {
+    background-color: #ff8f8f; /* Cor de fundo rosa mais clara quando o mouse está sobre o botão */
+}
+
+#mostrarBtn:active {
+    transform: scale(0.95); /* Reduz o tamanho do botão ao ser clicado para um efeito tátil */
+}
+
+.mensagem {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    background-image: url('pergaminho.png');
+    background-size: cover;
+    padding: 140px;
+    color: black; /* Cor do texto no pergaminho */
+  
+}
+@media (max-width: 480px) {
+    .mensagem {
+        font-size: 10px;
+        padding: 50px;
+    }
+}
+      video {
+width: 100%;
+    max-width: 640px; /* Largura máxima do vídeo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza o vídeo na tela */
+}
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-texto {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+  .titulo {
+      font-size: 36px;
+      color: #ff4d6d; /* Cor rosa para um toque romântico */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+      margin-bottom: 20px;
+  }
+
+
+                              
